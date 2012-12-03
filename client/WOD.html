@@ -1,0 +1,39 @@
+<head>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,600' rel='stylesheet' type='text/css'>
+ <link href='http://fonts.googleapis.com/css?family=Rufina:700' rel='stylesheet' type='text/css'>
+  <title>WOD</title>
+</head>
+
+<body>
+  {{> wods}}
+</body>
+
+<template name="wods">
+  <h1>Vaisnava Body Building WOD (Workout of the Day)</h1>
+  <div class="motto">"Anything more than 10 minutes is a waste of time"</div>
+  <div class="instructions">
+    <ul>
+        <li>This exercise regime is formulated to give you maximum results with minimum effort - in other words, optimized effort.</li>
+        <li>Do these exercises first thing in the morning, at high intensity, then just chill out and reap the rewards.</li>
+        <li>Eventually you will finish the WOD in under ten minutes each day.</li>
+        <li>In the beginning it will take longer, as you learn the exercise techniques. Take some time to practice them.</li>
+        <li>Do 5 sets of 5 reps, so you do: (3 exercises x 5 repetitions each) x 5 sets, with no rest break.</li>
+        <li>At the end your heart will be beating fast, and your muscles will feel tight, but not overly tired. You will sweat.</li>
+        <li>The continual load on your system triggers your hormonal system, and that does the rest of the work (fat burning, muscle building) throughout the day.</li>
+        <li>For additional benefits, take some protein straight afterwards, and drink milk if you want to get bigger.</li>
+        <li>Sleep harder than you work out, and do regular low-level cardio (walking) and stretching (yoga).</li>
+        <li>Take one or two days (max) off a week if you feel tired.</li>
+        <li>You can add a few days of big squats (back squat of your own body weight) in the evening if you have access to a squat rack.</li>
+        <li>Save time, chant Hare Krishna.</li>
+    </ul>
+  </div>
+  <div id="loading">(WOD loading takes a few seconds)</div>
+  {{#each wods}}
+  <div class="WOD"><h2 class="date">{{date}}</h2>
+      <div class="saying">"{{saying}}"</div>
+      <ol class="exercises">
+        {{#each exercise}}<li class="exercise">{{name}} <span class="video-link">[<a target="_blank" href="{{videoURL}}">video</a>]</span></li>{{/each}}
+        </ol>
+    </div>
+  {{/each}}
+</template>
