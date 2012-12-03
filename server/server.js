@@ -28,7 +28,8 @@ Meteor.methods( {
             'Training is a process, not the events of one day',
             "Ask Old Santa for a squat rack. Preferably one that won't fit down the chimney. You can't do the program without it, and that would leave you forever an elf",    
             "The Vaisnava WOD will make you invincible against 10 men or 14 dwarves",
-            "Cutting: its not just for the tree of samsara anymore"
+            "Cutting: its not just for the tree of samsara anymore", 
+            "Only actions performed with perseverance can ensure success"
         ];
         var exercises =  [ 
     
